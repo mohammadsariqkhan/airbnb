@@ -8,11 +8,12 @@ import SmallCard from "@/components/SmallCard";
 import MediumCard from "@/components/MediumCard";
 import LargeCard from "@/components/LargeCard";
 import Footer from "@/components/Footer";
+import {useRouter} from "next/router";
 
 const inter = Inter({subsets: ['latin']})
 
 export default function Home({exploreData, cardsData}) {
-
+    const router = useRouter()
     return (
         <div>
             <Head>
